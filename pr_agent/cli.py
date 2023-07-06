@@ -11,6 +11,8 @@ def run():
     parser = argparse.ArgumentParser(description='AI based pull request analyzer')
     parser.add_argument('--pr_url', type=str, help='The URL of the PR to review', required=True)
     parser.add_argument('--question', type=str, help='Optional question to ask', required=False)
+    parser.add_argument('--skip_extensions', nargs='+', type=str, help='List of extensions to skip', default=[], required=False)
+
     args = parser.parse_args()
     logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
     if args.question:
