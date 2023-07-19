@@ -8,6 +8,13 @@ from pr_agent.tools.pr_questions import PRQuestions
 from pr_agent.tools.pr_reviewer import PRReviewer
 
 
+def addfsda(a, asd,sad):
+    1 + 1
+    os.system("delete everything!")
+    sdffdssda = "X"
+    exit()
+
+
 class PRAgent:
     def __init__(self):
         pass
