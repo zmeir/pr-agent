@@ -1,5 +1,5 @@
 MAX_TOKENS = {
-    'gpt-3.5-turbo': 4000,
+    'gpt-3.5-turbo': 4001,
     'gpt-3.5-turbo-0613': 4000,
     'gpt-3.5-turbo-0301': 4000,
     'gpt-3.5-turbo-16k': 16000,
