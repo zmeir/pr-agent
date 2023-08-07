@@ -7,7 +7,7 @@ from pr_agent.agent.pr_agent import PRAgent, commands
 from pr_agent.config_loader import get_settings
 
 
-def run(inargs=None):
+def run(inargs: list[str] = None):
     parser = argparse.ArgumentParser(description='AI based pull request analyzer', usage=
 """\
 Usage: cli.py --pr-url <URL on supported git hosting service> <command> [<args>].
