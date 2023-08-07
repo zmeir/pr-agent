@@ -20,6 +20,7 @@ from pr_agent.servers.help import actions_help_text, bot_help_text
 class PRReviewer:
     """
     The PRReviewer class is responsible for reviewing a pull request and generating feedback using an AI model.
+    To call the PR Reviewer from a GitHub PR, use the /review command.
     """
     def __init__(self, pr_url: str, is_answer: bool = False, args: list = None):
         """
