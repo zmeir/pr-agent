@@ -43,7 +43,7 @@ class PRDescription:
             "commit_messages_str": self.git_provider.get_commit_messages()
         }
 
-        self.user_description = self.git_provider.get_user_description()
+        self.user_description = self.git_provider.get_user_description(fallback_user_title=True)
     
         # Initialize the token handler
         self.token_handler = TokenHandler(
