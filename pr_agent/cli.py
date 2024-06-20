@@ -8,7 +8,7 @@ from pr_agent.log import setup_logger
 
 setup_logger()
 
-def run(inargs=None):
+def run(inargs: list[str] = None):
     parser = argparse.ArgumentParser(description='AI based pull request analyzer', usage=
 """\
 Usage: cli.py --pr-url=<URL on supported git hosting service> <command> [<args>].
